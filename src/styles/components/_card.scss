@@ -1,0 +1,52 @@
+.card{
+  margin: 60px;
+  width: 300px;
+  height: auto;
+  position: relative;
+  &:hover{
+    img{
+      background-color: #cfe0da;
+      transition: 0.6s;
+      opacity: 0.1;
+    }
+    .capital, .name , .population{
+      transition: 0.8s;
+      opacity: 1;
+    }
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+
+  }
+img{
+transition: 1s;
+  height: auto;
+  max-width: 300px;
+}
+   .capital,.population ,h2{
+
+    transition: 0.8s;
+    opacity: 0;
+    top: 20%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.8rem;
+    position: absolute;
+    font-weight: bold;
+
+  }
+.name{
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5%;
+}
+  .capital{
+    margin-top: 50px;
+  }
+.population{
+  margin-top: 100px;
+}
+}
